@@ -1,0 +1,27 @@
+# -- SERVER CFG --
+server:
+  port: 1905
+
+# -- POSTGRESQL CFG --
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5050/AuthDb
+    username: postgres
+    password: root
+
+# -- JPA - HIBERNATE CFG --
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      format-sql: true
+
+# -- OPENAPI --
+#springdoc:
+#  api-docs:
+#    enabled: true
+#    path: /auth-service-docs
+#  swagger-ui:
+#    path: /authservice.html

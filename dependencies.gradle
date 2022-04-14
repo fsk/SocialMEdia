@@ -1,0 +1,24 @@
+ext{
+    versions = [
+            dependencyManagement  : "1.0.10-RELEASE",
+            springBoot            : "2.6.3",
+            springDataJpa         : "2.6.6",
+            postgresql            : "42.3.2",
+            mongoDb               : "3.12.10",
+            lombok                : "1.18.22",
+            validation            : "2.6.6",
+            openapi               : "1.6.7"
+    ]
+
+    libs = [
+
+            springBoot            : "org.springframework.boot:spring-boot-starter-web:${versions.springBoot}",
+            springDataJpa         : "org.springframework.boot:spring-boot-starter-data-jpa:${versions.springDataJpa}",
+            postgresql            : "org.postgresql:postgresql:${versions.postgresql}",
+            mongoDb               : "org.mongodb:mongodb-driver:${versions.mongoDb}",
+            lombok                : "org.projectlombok:lombok:${versions.lombok}",
+            validation            : "org.springframework.boot:spring-boot-starter-validation:${versions.validation}",
+            openapi               : "org.springdoc:springdoc-openapi-ui:${versions.openapi}"
+
+    ]
+}
